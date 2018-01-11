@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.2.2'
 
 gem 'bootstrap-sass', '3.1.1.1'
 gem 'bootstrap_form'
@@ -12,6 +12,9 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rb-readline'
 gem 'bcrypt'
+gem 'fabrication'
+gem 'faker'
+gem 'eventmachine', '~>1.0.4'
 
 group :development do
   gem 'thin'
