@@ -16,6 +16,7 @@ gem 'fabrication'
 gem 'faker'
 gem 'eventmachine', '~>1.0.4'
 
+
 group :development do
   gem 'thin'
   gem "better_errors"
@@ -33,6 +34,8 @@ group :test do
   gem 'database_cleaner', '1.4.1'
   gem 'shoulda-matchers', '2.7.0'
   gem 'vcr', '2.9.3'
+  gem 'capybara', '~> 2.17'
+  gem 'launchy'
 end
 
 group :production do
