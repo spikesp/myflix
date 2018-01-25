@@ -37,6 +37,7 @@ group :test do
   gem 'vcr', '2.9.3'
   gem 'capybara', '~> 2.17'
   gem 'launchy'
+  gem 'capybara-email'
 end
 
 group :production do
