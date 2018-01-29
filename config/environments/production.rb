@@ -14,13 +14,13 @@ Myflix::Application.configure do
 
   config.assets.digest = true
 
-  config.action_mailer.default_url_options = { :host => "weisuojiaoshou@gmail.com" }
+  config.action_mailer.default_url_options = { :host => "glacial-oasis-17797.herokuapp.com" }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   :address => 'smtp-relay.sendinblue.com',
   :port => 587,
-  :domain => 'weisuojiaoshou@gmail.com',
+  :domain => 'glacial-oasis-17797.herokuapp.com',
   :user_name => 'ENV[myflix_KEY]',
   :password => 'ENV[myflix_SECRET',
   :authentication => 'login',
