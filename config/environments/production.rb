@@ -19,9 +19,9 @@ Myflix::Application.configure do
     :authentication => :plain,
     :address => "smtp.mailgun.org",
     :port => 587,
-    :domain => "sandbox076523e29eda45448fef821b52d7b95d.mailgun.org",
-    :user_name => "postmaster@sandbox076523e29eda45448fef821b52d7b95d.mailgun.org",
-    :password => "myflex"
+    :domain => "glacial-oasis-17797.herokuapp.com",
+    :user_name => "postmaster@glacial-oasis-17797.herokuapp.com",
+    :password => "myflix"
   }
 
   config.i18n.fallbacks = true
