@@ -22,7 +22,7 @@ Myflix::Application.configure do
   :port => 587,
   :domain => 'glacial-oasis-17797.herokuapp.com',
   :user_name => 'ENV[myflix_KEY]',
-  :password => 'ENV[myflix_SECRET',
+  :password => 'ENV[myflix_SECRET]',
   :authentication => 'login',
   :enable_starttls_auto => true
   }
