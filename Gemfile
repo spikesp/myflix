@@ -15,6 +15,8 @@ gem 'bcrypt'
 gem 'fabrication'
 gem 'faker'
 gem 'eventmachine', '~>1.0.4'
+gem 'sidekiq'
+gem 'redis'
 
 
 group :development do
@@ -42,5 +44,6 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'unicorn'
 end
 
