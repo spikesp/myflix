@@ -45,5 +45,6 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
+  gem 'redis-namespace'
 end
 

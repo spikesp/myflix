@@ -137,6 +137,8 @@ GEM
     rake (10.3.2)
     rb-readline (0.5.5)
     redis (4.0.1)
+    redis-namespace (1.6.0)
+      redis (>= 3.0.4)
     rspec-collection_matchers (1.0.0)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (2.99.0)
@@ -224,6 +226,7 @@ DEPENDENCIES
   rails_12factor
   rb-readline
   redis
+  redis-namespace
   rspec-rails (= 2.99)
   sass-rails
   shoulda-matchers (= 2.7.0)
