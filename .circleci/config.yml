@@ -1,7 +1,9 @@
 version: 2
 jobs:
   build:
-    docker:
+    machine:
+      ruby:
+        version: 2.2.2
     steps:
       - deploy:
           name: Deploy Master to Heroku
