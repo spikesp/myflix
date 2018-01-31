@@ -17,6 +17,7 @@ gem 'faker'
 gem 'eventmachine', '~>1.0.4'
 gem 'sidekiq'
 gem 'redis'
+gem "sentry-raven"
 
 
 group :development do

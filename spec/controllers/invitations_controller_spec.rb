@@ -46,7 +46,9 @@ describe InvitationsController do
         expect(flash[:success]).to be_present
       end
     end
+
     context "with invalid input" do
+      after { ActionMailer::Base.deliveries.clear }
       it "renders the :new template" do
         set_current_user
         post :create, invitation: { recipient_email: "joe@example.com", message: "Hey join Myflix!" }
