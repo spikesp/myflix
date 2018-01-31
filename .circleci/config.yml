@@ -1,35 +1,35 @@
-version: 2
-jobs:
-  build:
-    machine:
-      ruby:
-        version: 2.2.2
-    steps:
-      - deploy:
-          name: Deploy Master to Heroku
-          command: |
-            heroku maintenance:on --app glacial-oasis-17797
-            heroku pg:backups capture --app glacial-oasis-17797
-            git push git@heroku.com:glacial-oasis-17797.git $CIRCLE_SHA1:refs/heads/master
-            heroku run rake db:migrate --app glacial-oasis-17797
-            heroku maintenance:off --app glacial-oasis-17797
 # version: 2
 # jobs:
 #   build:
-#   steps:
-#     - checkout
-#     - run:
-#         name: branch master
-#         command:|
-#           heroku maintenance:on --app production_app_name
-#           heroku pg:backups capture --app production_app_name
-#           git push git@heroku.com:production_app_name.git $CIRCLE_SHA1:refs/heads/master
-#           heroku run rake db:migrate --app production_app_name
-#           heroku maintenance:off --app production_app_name
-#   staging:
-#     branch: staging
-#     commands:
-#       - heroku maintenance:on --app staging_app_name
-#       - git push git@heroku.com:staging_app_name.git $CIRCLE_SHA1:refs/heads/master
-#       - heroku run rake db:migrate --app staging_app_name
-#       - heroku maintenance:off --app staging_app_name
+#     machine:
+#       ruby:
+#         version: 2.2.2
+#     steps:
+#       - deploy:
+#           name: Deploy Master to Heroku
+#           command: |
+#             heroku maintenance:on --app glacial-oasis-17797
+#             heroku pg:backups capture --app glacial-oasis-17797
+#             git push git@heroku.com:glacial-oasis-17797.git $CIRCLE_SHA1:refs/heads/master
+#             heroku run rake db:migrate --app glacial-oasis-17797
+#             heroku maintenance:off --app glacial-oasis-17797
+# # version: 2
+# # jobs:
+# #   build:
+# #   steps:
+# #     - checkout
+# #     - run:
+# #         name: branch master
+# #         command:|
+# #           heroku maintenance:on --app production_app_name
+# #           heroku pg:backups capture --app production_app_name
+# #           git push git@heroku.com:production_app_name.git $CIRCLE_SHA1:refs/heads/master
+# #           heroku run rake db:migrate --app production_app_name
+# #           heroku maintenance:off --app production_app_name
+# #   staging:
+# #     branch: staging
+# #     commands:
+# #       - heroku maintenance:on --app staging_app_name
+# #       - git push git@heroku.com:staging_app_name.git $CIRCLE_SHA1:refs/heads/master
+# #       - heroku run rake db:migrate --app staging_app_name
+# #       - heroku maintenance:off --app staging_app_name
