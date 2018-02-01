@@ -18,6 +18,10 @@ gem 'eventmachine', '~>1.0.4'
 gem 'sidekiq'
 gem 'redis'
 gem "sentry-raven"
+gem "carrierwave"
+gem "carrierwave-aws"
+gem "mini_magick"
+
 
 
 group :development do
