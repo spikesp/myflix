@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.save
       handle_invitation
       Stripe.api_key = ENV['STRIPE_SECRET_KEY']
-      token = params[:token]
+      # token = params[:token]
       Stripe::Charge.create(
         :amount => 999,
         :card => params[:stripeToken],
