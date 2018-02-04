@@ -21,6 +21,8 @@ gem "sentry-raven"
 gem "carrierwave"
 gem "carrierwave-aws"
 gem "mini_magick"
+gem "stripe"
+gem "figaro"
 
 
 
