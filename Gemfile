@@ -47,7 +47,9 @@ group :test do
   gem 'capybara', '~> 2.17'
   gem 'launchy'
   gem 'capybara-email'
-  gem 'webmock'
+  gem 'webmock', '1.15.0'
+  gem 'selenium-webdriver' ,'3.8.0'
+  gem 'geckodriver-helper'
 end
 
 group :production do
